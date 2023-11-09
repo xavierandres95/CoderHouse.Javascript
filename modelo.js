@@ -10,7 +10,7 @@ async function perrosAPI() {
         animales = datos.message.map((imagen, index) => ({
             id: index + 1,
             nombre: `Perro ${index + 1}`,
-            edad: Math.floor(Math.random() * 5) + 1, // Edad es aleatoria entre 1 y 5 y raza la misma porque el API no tiene más info
+            edad: Math.floor(Math.random() * 5) + 1, // Edad es aleatoria entre 1 y 5 y raza la misma porque el API no tiene más informacion
             raza: 'Desconocida',
             imagen: imagen,
         }));
@@ -20,7 +20,7 @@ async function perrosAPI() {
     }
 }
 
-// Función para llenar la sección HOME con las tarjetas de animales.
+// Función para llenar la sección HOME con las tarjetas de animales. 
 function crearTarjetas() {
     const contenido = document.getElementById('contenido');
 
