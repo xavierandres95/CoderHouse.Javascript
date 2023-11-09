@@ -20,7 +20,7 @@ async function perrosAPI() {
     }
 }
 
-// Función para llenar la sección HOME con las tarjetas de animales 
+// Función para llenar la sección HOME con las tarjetas de animales.
 function crearTarjetas() {
     const contenido = document.getElementById('contenido');
 
