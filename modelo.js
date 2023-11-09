@@ -20,28 +20,28 @@ async function perrosAPI() {
     }
 }
 
-// Función para llenar la sección HOME con las tarjetas de animales
+// Función para llenar la sección HOME con las tarjetas de animales 
 function crearTarjetas() {
     const contenido = document.getElementById('contenido');
 
     animales.forEach(animal => {
-        // Crear una tarjeta por cada animal
+      
         const tarjeta = document.createElement('div');
         tarjeta.classList.add('tarjeta');
 
-        // Imagen del animal
+     
         const imagen = document.createElement('img');
         imagen.src = animal.imagen;
         tarjeta.appendChild(imagen);
 
-        // Información del animal
+      
         const info = document.createElement('div');
         info.innerHTML = `<h2>${animal.nombre}</h2>
                           <p>Edad: ${animal.edad} años</p>
                           <p>Raza: ${animal.raza}</p>`;
         tarjeta.appendChild(info);
 
-        // Agregar la tarjeta al contenido principal
+       
         contenido.appendChild(tarjeta);
     });
 }
